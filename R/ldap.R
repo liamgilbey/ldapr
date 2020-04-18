@@ -2,7 +2,7 @@
 #' 
 #' LDAP is the Lightweight Directory Access Protocol. It's a hierarchical organization of Users, Groups, and Organisational Units -
 #'  which are containers for users and groups. Every object has it's own unique path to it's place in the directory - 
-#'  called a Distinguished Name, or DN. The bulk of the code is a wrapper around [liblap]{https://github.com/openldap/openldap/tree/master/libraries/libldap}
+#'  called a Distinguished Name, or DN. The bulk of the code is a wrapper around \href{https://github.com/openldap/openldap/tree/master/libraries/libldap}{libldap}
 #'  
 #'  The main purpose of this function is to provide LDAP authentication to Shiny applications.
 #' 

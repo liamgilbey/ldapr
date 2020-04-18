@@ -21,4 +21,3 @@ Useful links:
 \strong{Maintainer}: Liam Gilbey \email{liam.gilbey@gmail.com}
 
 }
-\keyword{internal}
