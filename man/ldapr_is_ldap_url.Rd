@@ -2,7 +2,7 @@
 % Please edit documentation in R/RcppExports.R
 \name{ldapr_is_ldap_url}
 \alias{ldapr_is_ldap_url}
-\title{Validate an LDAP URI. This is a fairly simple version of validation.}
+\title{Validate an LDAP URL.}
 \usage{
 ldapr_is_ldap_url(ldap_uri)
 }
@@ -10,5 +10,6 @@ ldapr_is_ldap_url(ldap_uri)
 \item{ldap_uri}{The URI you wish to validate}
 }
 \description{
-Validate an LDAP URI. This is a fairly simple version of validation.
+This is a fairly simple version of validation, simply checking whether the URL string starts with \code{ldap://}
 }
+\keyword{internal}

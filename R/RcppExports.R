@@ -17,7 +17,7 @@ ldapr_bind_s <- function(l, bind_dn, bind_pw) {
 #' Validate an LDAP URL.
 #' 
 #' This is a fairly simple version of validation, simply checking whether the URL string starts with \code{ldap://}
-#' 
+#' @keywords internal
 #' @param ldap_uri The URI you wish to validate
 #' 
 #' @export
@@ -36,7 +36,7 @@ ldapr_unbind <- function(l) {
 #' Parse an LDAP URL. 
 #' 
 #' This function performs robust URL validation by attempting to break the URL into the component pieces.
-#' 
+#' @keywords internal
 #' @param ldap_uri The URL to validate
 #' 
 #' @export

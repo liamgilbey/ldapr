@@ -2,13 +2,14 @@
 % Please edit documentation in R/RcppExports.R
 \name{ldapr_url_parse}
 \alias{ldapr_url_parse}
-\title{Validate an LDAP URI. This is a robust validation of an LDAP URI}
+\title{Parse an LDAP URL.}
 \usage{
 ldapr_url_parse(ldap_uri)
 }
 \arguments{
-\item{ldap_uri}{The URI you wish to validate}
+\item{ldap_uri}{The URL to validate}
 }
 \description{
-Validate an LDAP URI. This is a robust validation of an LDAP URI
+This function performs robust URL validation by attempting to break the URL into the component pieces.
 }
+\keyword{internal}
