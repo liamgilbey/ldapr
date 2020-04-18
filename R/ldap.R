@@ -20,11 +20,8 @@
 #' By itself, an LDAP object is simply a pointer to a connection handle
 #' @export
 #' @examples 
-#' 
-#' \dontrun{
-#' ld <- ldap$new("example.local", "ou=Users,dc=example,dc=local", 389)
-#' ld$bind("John Doe", "my_password")
-#' } 
+#' ld <- ldap$new("zflexldap.com", "ou=users,ou=guests,dc=zflexsoftware,dc=com", 389)
+#' ld$bind("guest1", "guest1password", "uid")
 #' @name ldap
 NULL
 
