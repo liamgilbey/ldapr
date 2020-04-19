@@ -7,6 +7,8 @@
 
 [![Travis build
 status](https://travis-ci.org/liamgilbey/ldapr.svg?branch=master)](https://travis-ci.org/liamgilbey/ldapr)
+[![Codecov test
+coverage](https://codecov.io/gh/liamgilbey/ldapr/branch/master/graph/badge.svg)](https://codecov.io/gh/liamgilbey/ldapr?branch=master)
 <!-- badges: end -->
 
 ## Overview
@@ -75,7 +77,7 @@ l$bind(
 #>   URI: ldap://zflexldap.com:389
 #>   Authenticated: TRUE
 #>   Authenticated user: guest1
-#>   Authenticated until: 2020-04-19 16:11:09
+#>   Authenticated until: 2020-04-19 16:19:52
 ```
 
 Once bound and authenticated with the LDAP server, we can perform search

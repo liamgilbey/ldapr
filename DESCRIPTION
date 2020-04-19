@@ -16,4 +16,5 @@ SystemRequirements: libldap-2.4-2 (deb)
 URL: https://github.com/liamgilbey/ldapr
 BugReports: https://github.com/liamgilbey/ldapr/issues  
 Suggests: 
-    testthat (>= 2.1.0)
+    testthat (>= 2.1.0),
+    covr
