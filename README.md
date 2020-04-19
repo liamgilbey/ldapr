@@ -3,6 +3,12 @@
 
 # ldapr
 
+<!-- badges: start -->
+
+[![Travis build
+status](https://travis-ci.org/liamgilbey/ldapr.svg?branch=master)](https://travis-ci.org/liamgilbey/ldapr)
+<!-- badges: end -->
+
 ## Overview
 
 ldapr is a system for
@@ -69,7 +75,7 @@ l$bind(
 #>   URI: ldap://zflexldap.com:389
 #>   Authenticated: TRUE
 #>   Authenticated user: guest1
-#>   Authenticated until: 2020-04-19 15:59:03
+#>   Authenticated until: 2020-04-19 16:11:09
 ```
 
 Once bound and authenticated with the LDAP server, we can perform search
