@@ -41,7 +41,7 @@ BEGIN_RCPP
 END_RCPP
 }
 // ldapr_search
-int ldapr_search(SEXP f, SEXP l, SEXP bd);
+CharacterVector ldapr_search(SEXP f, SEXP l, SEXP bd);
 RcppExport SEXP _ldapr_ldapr_search(SEXP fSEXP, SEXP lSEXP, SEXP bdSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;

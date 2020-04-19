@@ -73,7 +73,7 @@
 <div id="overview" class="section level2">
 <h2 class="hasAnchor">
 <a href="#overview" class="anchor"></a>Overview</h2>
-<p>ldapr is a system for <a href="https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol">LDAP</a> authentication in R. It acts as a wrapper around <a href="https://www.openldap.org/software/man.cgi?query=ldap">lidlap</a> to provide a central authentication mechanism to R products. The primary goal is to provide an LDAP client to shiny applications that require authentication.</p>
+<p>ldapr is a system for <a href="https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol">LDAP</a> authentication in R. It acts as a wrapper around <a href="https://www.openldap.org/software/man.cgi?query=ldap">lidlap</a> to provide a central authentication mechanism to R products. The primary goal is to provide an LDAP client to shiny applications that require authentication, without having to resort to options such as Shiny Server Pro.</p>
 <p>All suggestions are appreciated, so please get in touch.</p>
 </div>
 <div id="installation" class="section level2">
@@ -91,8 +91,7 @@
 <a href="#usage" class="anchor"></a>Usage</h2>
 <p>The central object in <code>ldapr</code> is the R6 class <code>ldap</code>. As with all R6 classes, a new <code>ldap</code> object is created with the <code>new</code> method. For testing purposes, we can attempt to authenticate against the free online LDAP server hosted by <a href="https://www.zflexldapadministrator.com/index.php/blog/82-free-online-ldap">zflexldap</a>.</p>
 <div class="sourceCode" id="cb3"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">ldapr</span>)</pre></div>
-<div class="sourceCode" id="cb4"><pre class="r"><span class="co"># Create an LDAP instance connected to the LDAP server at example.com</span>
-<span class="no">l</span> <span class="kw">&lt;-</span> <span class="no">ldap</span>$<span class="fu">new</span>(
+<div class="sourceCode" id="cb4"><pre class="r"><span class="no">l</span> <span class="kw">&lt;-</span> <span class="no">ldap</span>$<span class="fu">new</span>(
   <span class="kw">host</span> <span class="kw">=</span> <span class="st">"zflexldap.com"</span>,
   <span class="kw">base_dn</span> <span class="kw">=</span> <span class="st">"ou=users,ou=guests,dc=zflexsoftware,dc=com"</span>
 )
@@ -110,10 +109,10 @@
 <span class="co">#&gt;   URI: ldap://zflexldap.com:389</span>
 <span class="co">#&gt;   Authenticated: TRUE</span>
 <span class="co">#&gt;   Authenticated user: guest1</span>
-<span class="co">#&gt;   Authenticated until: 2020-04-19 08:30:34</span></pre></div>
+<span class="co">#&gt;   Authenticated until: 2020-04-19 15:59:03</span></pre></div>
 <p>Once bound and authenticated with the LDAP server, we can perform search operations to lookup entries in the DN.</p>
 <div class="sourceCode" id="cb6"><pre class="r"><span class="no">l</span>$<span class="fu"><a href="https://rdrr.io/r/base/search.html">search</a></span>(<span class="st">"(uid=guest2)"</span>)
-<span class="co">#&gt; [1] 0</span></pre></div>
+<span class="co">#&gt; [1] "uid=guest2,ou=users,ou=guests,dc=zflexsoftware,dc=com"</span></pre></div>
 </div>
 </div>
   </div>

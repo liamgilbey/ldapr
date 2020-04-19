@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 
 ## Overview 
 
-ldapr is a system for [LDAP](https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol) authentication in R. It acts as a wrapper around [lidlap](https://www.openldap.org/software/man.cgi?query=ldap) to provide a central authentication mechanism to R products. The primary goal is to provide an LDAP client to shiny applications that require authentication.
+ldapr is a system for [LDAP](https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol) authentication in R. It acts as a wrapper around [lidlap](https://www.openldap.org/software/man.cgi?query=ldap) to provide a central authentication mechanism to R products. The primary goal is to provide an LDAP client to shiny applications that require authentication, without having to resort to options such as Shiny Server Pro.
 
 All suggestions are appreciated, so please get in touch.
 
@@ -47,7 +47,6 @@ library(ldapr)
 
 
 ```{r}
-# Create an LDAP instance connected to the LDAP server at example.com
 l <- ldap$new(
   host = "zflexldap.com",
   base_dn = "ou=users,ou=guests,dc=zflexsoftware,dc=com"

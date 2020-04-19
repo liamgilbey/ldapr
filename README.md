@@ -11,7 +11,8 @@ authentication in R. It acts as a wrapper around
 [lidlap](https://www.openldap.org/software/man.cgi?query=ldap) to
 provide a central authentication mechanism to R products. The primary
 goal is to provide an LDAP client to shiny applications that require
-authentication.
+authentication, without having to resort to options such as Shiny Server
+Pro.
 
 All suggestions are appreciated, so please get in touch.
 
@@ -45,7 +46,6 @@ library(ldapr)
 ```
 
 ``` r
-# Create an LDAP instance connected to the LDAP server at example.com
 l <- ldap$new(
   host = "zflexldap.com",
   base_dn = "ou=users,ou=guests,dc=zflexsoftware,dc=com"
@@ -69,7 +69,7 @@ l$bind(
 #>   URI: ldap://zflexldap.com:389
 #>   Authenticated: TRUE
 #>   Authenticated user: guest1
-#>   Authenticated until: 2020-04-19 08:30:34
+#>   Authenticated until: 2020-04-19 15:59:03
 ```
 
 Once bound and authenticated with the LDAP server, we can perform search
@@ -77,5 +77,5 @@ operations to lookup entries in the DN.
 
 ``` r
 l$search("(uid=guest2)")
-#> [1] 0
+#> [1] "uid=guest2,ou=users,ou=guests,dc=zflexsoftware,dc=com"
 ```
