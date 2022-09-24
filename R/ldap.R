@@ -66,6 +66,6 @@ ldap <- R6::R6Class("ldap",
 ldap_unbind <- function(
   private
 ){
-  ldap_unbind(private$handle)
+  ldapr_unbind(private$handle)
 }
 
