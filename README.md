@@ -77,7 +77,7 @@ l$bind(
 #>   URI: ldap://zflexldap.com:389
 #>   Authenticated: TRUE
 #>   Authenticated user: guest1
-#>   Authenticated until: 2020-04-19 16:19:52
+#>   Authenticated until: 2022-09-24 11:05:52
 ```
 
 Once bound and authenticated with the LDAP server, we can perform search
