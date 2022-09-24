@@ -21,8 +21,10 @@ get_timeout <- function(timeout_mins = 15){
 
 # assertions
 assert_generic <- function(x, f){
-  stopifnot(f(x),
-            length(x) > 0)
+  stopifnot(
+    f(x),
+    length(x) > 0
+  )
 }
 
 assert_numeric <- function(x){
@@ -34,9 +36,11 @@ assert_character <- function(x){
 }
 
 assert_numeric_scalar <- function(x){
-  stopifnot(is.numeric(x),
-            length(x) == 1,
-            !is.na(x))
+  stopifnot(
+    is.numeric(x),
+    length(x) == 1,
+    !is.na(x)
+  )
 }
 
 

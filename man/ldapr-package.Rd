@@ -6,8 +6,7 @@
 \alias{ldapr-package}
 \title{ldapr: An R implementation of LDAP}
 \description{
-An implementation of LDAP in R. This allows authentication against a valid LDAP server, which is mostly useful inside a 
-  shiny application that requires use authentication.
+An implementation of LDAP in R. This allows authentication against a valid LDAP server, which is mostly useful inside a shiny application that requires use authentication.
 }
 \seealso{
 Useful links:

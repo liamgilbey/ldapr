@@ -1,8 +1,8 @@
 Package: ldapr
 Type: Package
 Title: An R implementation of LDAP
-Version: 0.0.1
-Date: 2020-02-29
+Version: 0.0.2
+Date: 2022-09-24
 Authors@R: person("Liam", "Gilbey", email = "liam.gilbey@gmail.com",
   role = c("aut", "cre"))
 Description: An implementation of LDAP in R. This allows authentication against a valid LDAP server, which is mostly useful inside a 
@@ -11,9 +11,10 @@ License: MIT + file LICENSE
 Imports: Rcpp (>= 1.0.1),
   R6
 LinkingTo: Rcpp
-RoxygenNote: 6.1.1
+RoxygenNote: 7.2.1
 SystemRequirements: libldap-2.4-2 (deb)
-URL: https://github.com/liamgilbey/ldapr
+URL: https://github.com/liamgilbey/ldapr,
+    https://liamgilbey.github.io/ldapr/
 BugReports: https://github.com/liamgilbey/ldapr/issues  
 Suggests: 
     testthat (>= 2.1.0),

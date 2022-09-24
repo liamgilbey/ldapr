@@ -1,16 +1,17 @@
+url: https://liamgilbey.github.io/ldapr/
 navbar:
-  title: "ldapr"
+  title: ldapr
   left:
-    - text: "Home"
-      href: index.html
-    - text: "News"
-      href: news/index.html
-    - text: "Reference"
-      href: reference/index.html
+  - text: Home
+    href: index.html
+  - text: News
+    href: news/index.html
+  - text: Reference
+    href: reference/index.html
   right:
-    - icon: fa-github
-      href: https://github.com/liamgilbey/ldapr
-
+  - icon: fa-github
+    href: https://github.com/liamgilbey/ldapr
 template:
   params:
     bootswatch: yeti
+
